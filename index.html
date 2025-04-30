@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&K-Tech Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="logo" data-short="H&K-Tech" data-full="H&K-Tech Solution"><span>H&K-Tech</span></a>
+                <div class="nav-links">
+                    <a href="#services" data-translate="servicesTitle">Послуги</a>
+                    <a href="#about" data-translate="about">Про нас</a>
+                    <a href="#contact" data-translate="contacts">Контакти</a>
+                </div>
+                <div class="nav-right">
+                    <div class="language-switcher">
+                        <div class="switch-container">
+                            <input type="checkbox" id="langToggle" class="lang-toggle">
+                            <label for="langToggle" class="switch">
+                                <span class="switch-label" data-lang="uk">UA</span>
+                                <span class="switch-label" data-lang="en">EN</span>
+                            </label>
+                        </div>
+                    </div>
+                    <a href="#contact" class="button primary" data-translate="contact">Зв'язатися</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 data-translate="heroTitle">Технологічні рішення для вашого бізнесу</h1>
+                    <p class="subtitle" data-translate="heroSubtitle">Професійна підтримка та інновації для розвитку вашого бізнесу</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="button primary" data-translate="orderConsultation">Замовити консультацію</a>
+                        <a href="#services" class="button secondary" data-translate="learnMore">Дізнатись більше</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="hero-digital-transformation.jpg" alt="Digital Document Management and Network Infrastructure" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 data-translate="ourServices">Наші послуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3 data-translate="services.videoSystems.title">Налаштування відеосистем</h3>
+                        <p data-translate="services.videoSystems.description">Професійне встановлення та налаштування систем відеоспостереження для безпеки вашого бізнесу</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-translate="services.network.title">Налаштування локальної мережі</h3>
+                        <p data-translate="services.network.description">Проектування та налаштування локальних мереж будь-якої складності для ефективної роботи</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-translate="services.repair.title">Ремонт техніки</h3>
+                        <p data-translate="services.repair.description">Професійний ремонт комп'ютерів та периферійного обладнання з гарантією якості</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-translate="services.sales.title">Продаж комплектуючих</h3>
+                        <p data-translate="services.sales.description">Широкий асортимент якісних комплектуючих для комп'ютерної техніки за найкращими цінами</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-translate="services.digitalization.title">Цифровізація бізнесу</h3>
+                        <p data-translate="services.digitalization.description">Комплексні рішення для переходу вашого бізнесу в цифровий формат</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-translate="services.consultation.title">Консультації та діагностика</h3>
+                        <p data-translate="services.consultation.description">Експертні консультації та професійна діагностика комп'ютерного обладнання</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-translate="contactUs">Зв'язатися з нами</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 data-translate="contactInfo">Контактна інформація</h3>
+                        <div class="contact-details">
+                            <ul class="contact-info-list">
+                                <li>
+                                    <a href="tel:+380953710719">+380 95 371 07 19</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:contact@hktech.com">contact@hktech.com</a>
+                                </li>
+                            </ul>
+                            <div class="messenger-buttons">
+                                <a href="viber://chat?number=%2B380953710719" class="button messenger viber">
+                                    <span>Viber</span>
+                                </a>
+                                <a href="https://t.me/username" class="button messenger telegram">
+                                    <span>Telegram</span>
+                                </a>
+                                <a href="https://wa.me/380953710719" class="button messenger whatsapp">
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-translate="form.name">Ім'я</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="form.email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-translate="form.phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="form.message">Повідомлення</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="button submit" data-translate="form.send">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">H&K-Tech Solution</a>
+                    <p data-translate="footer.professionalServices">Професійні послуги для вашого бізнесу</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="footer.services">Послуги</h4>
+                    <ul>
+                        <li><a href="#services" data-translate="footer.servicesList.videoSystems">Відеосистеми</a></li>
+                        <li><a href="#services" data-translate="footer.servicesList.network">Локальні мережі</a></li>
+                        <li><a href="#services" data-translate="footer.servicesList.repair">Ремонт техніки</a></li>
+                        <li><a href="#services" data-translate="footer.servicesList.components">Комплектуючі</a></li>
+                        <li><a href="#services" data-translate="footer.servicesList.digitalization">Цифровізація</a></li>
+                        <li><a href="#services" data-translate="footer.servicesList.consultation">Консультації</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="footer.company">Компанія</h4>
+                    <ul>
+                        <li><a href="#about" data-translate="about">Про нас</a></li>
+                        <li><a href="#contact" data-translate="contacts">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-translate="footer.contacts">Контакти</h4>
+                    <ul>
+                        <li><a href="tel:+380953710719">+380 95 371 07 19</a></li>
+                        <li><a href="mailto:contact@hktech.com">contact@hktech.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
